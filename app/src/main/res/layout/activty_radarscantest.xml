@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.king.mycirclewavedivergence.CircleWaveDivergenceView
+        android:id="@+id/search_device_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#123451"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_height="45dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btn_continue"
+        android:text="继续"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btn_pause"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:text="暂停"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
+</RelativeLayout>
