@@ -81,20 +81,15 @@ public class CircleWaveDivergenceView extends RelativeLayout{
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);	
 		canvas.drawBitmap(bitmap, getWidth() / 2 - bitmap.getWidth() / 2, getHeight() / 2 - bitmap.getHeight() / 2, null);
-		
 		if(isSearching){
-			
-			Rect rMoon = new Rect(getWidth()/2-bitmap2.getWidth(),getHeight()/2,getWidth()/2,getHeight()/2+bitmap2.getHeight()); 
+			Rect rMoon = new Rect(getWidth()/2-bitmap2.getWidth(),getHeight()/2,getWidth()/2,getHeight()/2+bitmap2.getHeight());
 			canvas.rotate(offsetArgs,getWidth()/2,getHeight()/2);
 			canvas.drawBitmap(bitmap2,null,rMoon,null);
 			offsetArgs = offsetArgs + 3;
 		}else{
-			
 			canvas.drawBitmap(bitmap2,  getWidth() / 2  - bitmap2.getWidth() , getHeight() / 2, null);
 		}
-		
 		canvas.drawBitmap(bitmap1,  getWidth() / 2 - bitmap1.getWidth() / 2, getHeight() / 2 - bitmap1.getHeight() / 2, null);
-		
 		if(isSearching) invalidate();
 	}
 

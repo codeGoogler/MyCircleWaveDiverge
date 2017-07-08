@@ -35,10 +35,10 @@ public class RadarScanTestActivty extends Activity implements OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.btn_continue:
-                search_device_view.setSearching(false);
+                search_device_view.setSearching(true);
                 break;
             case R.id.btn_pause:
-                search_device_view.setSearching(true);
+                search_device_view.setSearching(false);
                 break;
         }
     }

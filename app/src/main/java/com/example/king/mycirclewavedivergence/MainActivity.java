@@ -55,7 +55,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		switch(v.getId()){
 		case R.id.cancle:
-			animation_01(10.0f);
+			animation_01(5.0f);
 			break;
 			case R.id.btn_scanner:
 				startActivity(new Intent(MainActivity.this,RadarScanTestActivty.class));
@@ -93,15 +93,10 @@ public class MainActivity extends Activity implements OnClickListener{
         animationSet.setFillAfter(true);
         animationSet.setInterpolator(new AccelerateInterpolator());
         animationSet.setAnimationListener(new AnimationListener() {
-
 			public void onAnimationStart(Animation animation) {
-
 			}
-
 			public void onAnimationRepeat(Animation animation) {
-
 			}
-
 			public void onAnimationEnd(Animation animation) {
 				imageview_01.startAnimation(animationSet);
 			}
@@ -118,13 +113,11 @@ public class MainActivity extends Activity implements OnClickListener{
         
         @Override
         public void onStartTrackingTouch(SeekBar seekBar) {
-//            description.setText("开始拖动");
         }
         
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress,
                 boolean fromUser) {
-//            description.setText("当前进度："+progress+"%");
         }
     };
 	
